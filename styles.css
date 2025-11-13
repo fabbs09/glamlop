@@ -1,0 +1,167 @@
+/*MENU*/
+
+.topheader {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+}
+.Menu-Horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.Menu-Horizontal li a {
+  display: block;
+  text-decoration: none;
+}
+.Menu-Horizontal li a:hover {
+  color: red;
+}
+.Menu-vertical {
+  padding: 0;
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 6.25rem;
+  background-color: gainsboro;
+}
+.Menu-Horizontal li:hover .Menu-vertical {
+  display: block;
+}
+.Menu-vertical li a {
+  padding: 0.938rem 0.938rem 0.938rem 1.25rem;
+}
+/*SECCION PRODUCTOS*/
+.seccion-productos {
+  padding: 7.5rem 3.75rem 1.25rem; /**/
+  background-color: white;
+}
+.div-gral-prod {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /**/
+  /*max-width: 1200px;*/
+  margin: 0;
+  gap: 2.5rem;
+}
+.div-prod-texto {
+  flex: 1;
+}
+.div-prod-texto h2 {
+  color: pink;
+  margin-bottom: 0.938rem;
+}
+.div-prod-texto p {
+  color: black;
+  line-height: 1.5;
+  text-align: justify;
+}
+.div-prod-img {
+  flex: 1; /**/
+  display: flex;
+  justify-content: center; /* centra la imagen en su mitad */
+  padding-right: 5rem;
+}
+.div-prod-img img {
+  /*
+  width: 100%;
+  max-width: 500px;*/
+  width: 100%;
+  max-width: 31.25rem; /* controla el tamaño máximo */
+  height: auto;
+  border-radius: 0.625rem;
+}
+.seccion-perfumes {
+  padding: 3.75rem 1.25rem;
+  background-color: white;
+}
+.div-gral-perfum {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+.div-perfum-texto {
+  flex: 1;
+  text-align: justify;
+}
+.div-perfum-texto h2 {
+  color: pink;
+  margin-bottom: 0.938rem;
+}
+.div-perfum-texto p {
+  color: black;
+  line-height: 1.5;
+  text-align: justify;
+}
+.div-perfum-video {
+  flex: 1;
+}
+.div-perfum-video iframe {
+  width: 100%;
+  max-width: 31.25rem;
+}
+/*FORMULARIO*/
+.seccion-formmulario {
+  background-color: rgb(154, 216, 216);
+  padding: 2.5rem;
+  border: 0.188rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+.div-cont-formulario {
+  background-color: rgb(231, 211, 185);
+  padding: 1.875rem;
+  border: 0.125rem solid rgb(207, 130, 15);
+  border-radius: 0.625rem;
+  width: 100%;
+  max-width: 31.25rem;
+}
+.campo {
+  border: 0.063rem;
+  padding: 0.938rem;
+  margin-bottom: 0.938rem;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+.formulario label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: red;
+}
+/*input y select*/
+input[type="text"],
+select {
+  width: 100%;
+  padding: 0.625rem;
+  border: 0.063rem solid blue;
+  border-radius: 0.313rem;
+  box-sizing: border-box;
+}
+.lista-checkbox,
+.lista-radio {
+  list-style: none;
+  padding: 0.625rem;
+  margin: 0;
+  border: 0.063rem;
+  background-color: pink;
+  border-radius: 0.313rem;
+}
+button {
+  background-color: orange;
+  color: black;
+  border: 0.063rem solid black;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.313rem;
+  cursor: pointer;
+}

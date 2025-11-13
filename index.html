@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Pie.css" />
+  </head>
+  <body>
+    <!--LOGO Y MENUS-->
+    <nav class="topheader">
+      <a href="" class="logo">
+        <img height="100" width="100" src="image/gl.png" alt="" />
+      </a>
+      <ul class="Menu-Horizontal">
+        <li><a href="">Productos</a></li>
+        <li>
+          <a href="">Servicios</a>
+          <ul class="Menu-vertical">
+            <li><a href="">Pago Servicios</a></li>
+            <li><a href="">Pago impuestos</a></li>
+            <li><a href="">Transferencias</a></li>
+            <li><a href="">Financieros</a></li>
+          </ul>
+        </li>
+        <li><a href="">Banca por internet</a></li>
+        <li><a href="">Quienes Somos</a></li>
+      </ul>
+    </nav>
+    <!--SECCION PRODUCTOS-->
+
+    <section class="seccion-productos">
+      <div class="div-gral-prod">
+        <div class="div-prod-texto">
+          <h2>Seccion Productos</h2>
+          <p>
+            La línea Total Block tiene todo lo que los dermatólogos buscan en un
+            protector solar y más. Encuentra aquí todo lo que necesitas para una
+            protección superior dermatológicamente probada.
+          </p>
+          <p>
+            Protección contra los rayos UVA/UVB, factor de protección (SPF) 50 a
+            más, resistente al agua y al sudor, fórmula hipoalergénica y apto
+            para todo tipo de piel. La línea total block tiene todo lo que los
+            dermatólogos buscan en un protector solar y más. Descubre todos sus
+            beneficios para momentos de alta exposición.
+          </p>
+        </div>
+
+        <div class="div-prod-img">
+          <img src="image/img.jpg" />
+        </div>
+      </div>
+    </section>
+    <!--SECCION PRODUCTOS-->
+    <section class="seccion-perfumes">
+      <div class="div-gral-perfum">
+        <div class="div-perfum-texto">
+          <h2>Seccion Perfumes</h2>
+          <p>
+            ¡Esencias únicas y memorables! Perfumes creados con exclusivos
+            ingredientes de cada rincón del mundo. Obras de arte de alta
+            perduración que conectan contigo.
+          </p>
+          <p>
+            Cada uno de nuestros perfumes ha sido desarrollado con ingredientes
+            naturales y exclusivos, para crear esencias únicas que perduren.
+            Seleccionamos, uno a uno, cada ingrediente, formando aromas
+            inolvidables y de alta perduración. Creamos historias detrás de cada
+            perfume para que vivas cada esencia, a tu manera. Una variedad de
+            perfumes que podrás disfrutar desde la primera aplicación.
+          </p>
+        </div>
+
+        <div class="div-perfum-video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/CdNIkr67isU?si=MbzSrN3yyJdUpn3_"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="seccion-formmulario">
+      <div class="div-cont-formulario">
+        <h2>Formulario de Registro</h2>
+        <p>Complete todos los campos</p>
+        <form class="formulario">
+          <!--LABEL/INPUT-->
+          <div class="campo">
+            <label for="nombre">Nombres Completos:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese sus nombres"
+            />
+          </div>
+          <!--MENU DESPLEGALE-->
+          <div class="campo">
+            <label for="nombre">Pais:</label>
+            <select id="pais" name="pais">
+              <option value="">seleccione un pais</option>
+              <option value="Peru">Peru</option>
+              <option value="Brazil">Brazil</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Argentina">Argentina</option>
+            </select>
+          </div>
+          <!--CHECKBOX-->
+          <div class="campo">
+            <label>Intereses:</label>
+            <ul class="lista-checkbox">
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="intereses"
+                    value="Maquillaje"
+                  />Maquillaje</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="intereses"
+                    value="Skin care"
+                  />Skin care</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="intereses"
+                    value="Perfumes"
+                  />Perfumes</label
+                >
+              </li>
+            </ul>
+          </div>
+          <!--RADIO-->
+          <div class="campo">
+            <label>Sexo:</label>
+            <ul class="lista-radio">
+              <li>
+                <label
+                  ><input
+                    type="radio"
+                    name="sexo"
+                    value="masculino"
+                  />Masculino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="radio"
+                    name="sexo"
+                    value="femenino"
+                  />Femenino</label
+                >
+              </li>
+            </ul>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+    <!-- PIE DE PAGINA -->
+
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img
+              src="Imagenes/senati-logo.png"
+              alt="Logo"
+              class="footer-logo"
+            />
+            <p>SENATI</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="/Documentos/3.politica-privacidad.pdf"
+              >Política de Privacidad</a
+            >
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="#">Términos y Condiciones</a>
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="/Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
